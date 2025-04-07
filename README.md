@@ -19,6 +19,8 @@ WIP
 
 ## :key: Secrets
 
+[SOPS][5] is used with [age][6] to encrypt and decrypt secrets.
+
 ### :lock: Encrypt
 
 ```shell
@@ -55,3 +57,4 @@ This project was started in 2025 by [Nicholas Wilde][2].
 [2]: <https://github.com/nicholaswilde/>
 [3]: <https://github.com/nicholaswilde/homelab-playbooks>
 [4]: <https://nicholaswilde.io/homelab>
+[5]: <https://getsops.io/>
