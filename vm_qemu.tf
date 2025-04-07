@@ -11,8 +11,6 @@ resource "proxmox_vm_qemu" "your-vm" {
 
   # FIXME Before deployment, set the desired VM ID (must be unique on the target node)
   vmid = "100"
-
-  # !SECTION
   
   # SECTION Template Settings
 
@@ -21,8 +19,6 @@ resource "proxmox_vm_qemu" "your-vm" {
   clone = "your-clone-name"
   full_clone = true
 
-  # !SECTION
-
   # SECTION Boot Process
 
   onboot = true 
@@ -30,8 +26,6 @@ resource "proxmox_vm_qemu" "your-vm" {
   # NOTE Change startup, shutdown and auto reboot behavior
   startup = ""
   automatic_reboot = false
-
-  # !SECTION
 
   # SECTION Hardware Settings
 
@@ -44,8 +38,6 @@ resource "proxmox_vm_qemu" "your-vm" {
 
   # NOTE Minimum memory of the balloon device, set to 0 to disable ballooning
   balloon = 2048
-  
-  # !SECTION
 
   # SECTION Network Settings
 
@@ -54,8 +46,6 @@ resource "proxmox_vm_qemu" "your-vm" {
     bridge = "vmbr1"
     model  = "virtio"
   }
-
-  # !SECTION
 
   # SECTION Disk Settings
   
@@ -88,8 +78,6 @@ resource "proxmox_vm_qemu" "your-vm" {
     }
   }
 
-  # !SECTION
-
   # SECTION Cloud Init Settings
 
   # FIXME Before deployment, adjust according to your network configuration
@@ -97,6 +85,4 @@ resource "proxmox_vm_qemu" "your-vm" {
   nameserver = "0.0.0.0"
   ciuser = "your-username"
   sshkeys = var.PUBLIC_SSH_KEY
-
-  # !SECTION
 }
