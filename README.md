@@ -25,7 +25,7 @@ WIP
 sops -e --input-type dotenv --output-type dotenv secrets.tfvars > secrets.tfvars.enc
 ```
 
-Decrypt
+### :unlock: Decrypt
 
 ```shell
 sops -d --input-type dotenv --output-type dotenv secrets.tfvars.enc > secrets.tfvars
