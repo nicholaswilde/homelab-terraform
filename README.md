@@ -5,7 +5,7 @@ A Terraform repo for my homelab.
 
 ---
 
-# :frame_with_picture: Background
+# :framed_picture: Background
 
 Terraform is used to deploy resources in my homelab. Specifically, containers and virtual machines in Proxmox.
 
