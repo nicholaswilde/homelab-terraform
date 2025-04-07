@@ -1,5 +1,6 @@
 variable "HOSTNAME" {
   type      = string
+  description = "The hostname of the container"
 }
 
 variable "SIZE" {
