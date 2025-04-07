@@ -1,3 +1,4 @@
+// https://registry.terraform.io/providers/Telmate/proxmox/latest/docs/resources/lxc
 resource "proxmox_lxc" "basic" {
   target_node  = "pve"
   hostname     = "lxc-basic"
