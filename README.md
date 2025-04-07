@@ -19,7 +19,7 @@ WIP
 
 ## :key: Secrets
 
-Encrypt
+### :lock: Encrypt
 
 ```shell
 sops -e --input-type dotenv --output-type dotenv secrets.tfvars > secrets.tfvars.enc
