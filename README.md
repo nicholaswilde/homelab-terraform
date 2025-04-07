@@ -7,7 +7,7 @@ A Terraform repo for my homelab.
 
 # :framed_picture: Background
 
-Terraform is used to deploy resources in my homelab. Specifically, containers and virtual machines in Proxmox.
+[Terraform][1] is used to deploy resources in my homelab. Specifically, containers and virtual machines in Proxmox.
 
 Ansible is used to configure my homelab. See [Homelab Playbooks][3].
 
@@ -35,5 +35,7 @@ WIP
 
 This project was started in 2025 by [Nicholas Wilde][2].
 
+[1]: <https://www.terraform.io/>
 [2]: <https://github.com/nicholaswilde/>
 [3]: <https://github.com/nicholaswilde/homelab-playbooks>
+[4]: <https://nicholaswilde.io/homelab>
