@@ -2,6 +2,18 @@
 version: '3'
 
 tasks:
+  apply:
+    desc: Apply
+    cmds:
+      - terraform apply
+  init:
+    desc: Init
+    cmds:
+      - terraform init
+  plan:
+    desc: Plan
+    cmde:
+      - terraform plan
   decrypt:
     desc: Decrypt vars using SOPS
     cmds:
