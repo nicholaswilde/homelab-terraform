@@ -19,16 +19,16 @@ WIP
 
 ## :key: Secrets
 
+Encrypt
+
+```shell
+sops -e --input-type dotenv --output-type dotenv secrets.tfvars > secrets.tfvars.enc
+```
+
 Decrypt
 
 ```shell
 sops -d --input-type dotenv --output-type dotenv secrets.tfvars.enc > secrets.tfvars
-```
-
-Encrypt
-
-```shell
-
 ```
 
 ---
