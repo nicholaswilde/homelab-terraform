@@ -58,3 +58,4 @@ This project was started in 2025 by [Nicholas Wilde][2].
 [3]: <https://github.com/nicholaswilde/homelab-playbooks>
 [4]: <https://nicholaswilde.io/homelab>
 [5]: <https://getsops.io/>
+[6]: <https://github.com/FiloSottile/age>
