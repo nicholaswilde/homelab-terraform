@@ -38,6 +38,8 @@ sops -d --input-type dotenv --output-type dotenv secrets.tfvars.enc > secrets.tf
 ## :pencil: Usage
 
 ```shell
+terraform init
+terraform plan -var-file=secrets.tfvars
 terraform apply -var-file=secrets.tfvars
 ```
 
