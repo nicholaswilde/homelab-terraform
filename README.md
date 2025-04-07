@@ -17,11 +17,19 @@ Ansible is used to configure my homelab. See [Homelab Playbooks][3].
 
 WIP
 
+## Secrets
+
+```shell
+
+```
+
 ---
 
 ## :pencil: Usage
 
-WIP
+```shell
+terraform apply -var-file=secrets.tfvars
+```
 
 ---
 
