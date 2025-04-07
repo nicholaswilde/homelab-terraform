@@ -12,3 +12,19 @@ variable "SIZE" {
     error_message = "The rootfs size must be a number followed by 'G' (e.g., '8G')."
   }
 }
+
+variable "pm_api_url" {
+  type      = string
+}
+
+variable "pm_api_token_id" {
+  type      = string
+}
+
+variable "pm_api_token_secret" {
+  type      = string
+}
+
+variable "lxc_password" {
+  type      = string
+}
