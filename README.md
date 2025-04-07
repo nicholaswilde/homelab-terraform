@@ -7,7 +7,7 @@ A Terraform repo for my homelab.
 
 # :framed_picture: Background
 
-[Terraform][1] is used to deploy resources in my homelab. Specifically, containers and virtual machines in Proxmox.
+[Terraform][1] is used to deploy resources in my [homelab][4]. Specifically, containers and virtual machines in Proxmox.
 
 Ansible is used to configure my homelab. See [Homelab Playbooks][3].
 
