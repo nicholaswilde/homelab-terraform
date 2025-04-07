@@ -6,6 +6,14 @@ vars:
   GREETING: Hello, World!
 
 tasks:
+  decrypt:
+    desc: Decrypt vars using SOPS
+    cmds:
+      - sops -d --input-type dotenv --output-type dotenv env_vars/pve04.tfvars.enc > env_vars/pve04.tfvars
+  encrypt:
+    desc: Encrypt vars using SOPS
+    cmds:
+      - sops -e env_vars/pve04.tfvars > env_vars/pve04.tfvars.enc
   default:
     cmds:
       - echo "{{.GREETING}}"
