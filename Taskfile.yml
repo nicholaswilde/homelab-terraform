@@ -21,7 +21,7 @@ tasks:
   encrypt:
     desc: Encrypt vars using SOPS
     cmds:
-      - sops -e env_vars/pve04.tfvars > env_vars/pve04.tfvars.enc
+      - sops -e --input-type dotenv --output-type dotenv env_vars/pve04.tfvars > env_vars/pve04.tfvars.enc
   default:
     cmds:
       - task -l

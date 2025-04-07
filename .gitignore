@@ -47,3 +47,4 @@ Thumbs.db
 *.lock.hcl
 
 variables.tf
+env_vars/*.tfvars
