@@ -5,7 +5,7 @@ A Terraform repo for my homelab
 
 ---
 
-
+## :gear: Config
 
 WIP
 
