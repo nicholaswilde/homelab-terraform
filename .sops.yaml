@@ -1,6 +1,6 @@
 ---
 creation_rules:
-  - filename_regex: \.tf$
+  - filename_regex: \.tfvars$
     age: 'age1x2at6wwq2gks47fsep9a25emdeqd93e3k0gfsswtmhruqrteu5jqjvy7kd'
   - filename_regex: \.tf$
     age: 'age1x2at6wwq2gks47fsep9a25emdeqd93e3k0gfsswtmhruqrteu5jqjvy7kd'
