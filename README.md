@@ -17,7 +17,7 @@ Ansible is used to configure my homelab. See [Homelab Playbooks][3].
 
 WIP
 
-## Secrets
+## :key: Secrets
 
 ```shell
 
