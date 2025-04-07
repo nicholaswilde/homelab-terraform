@@ -19,6 +19,14 @@ WIP
 
 ## :key: Secrets
 
+Decrypt
+
+```shell
+sops -d --input-type dotenv --output-type dotenv secrets.tfvars.enc > secrets.tfvars
+```
+
+Encrypt
+
 ```shell
 
 ```
