@@ -1,0 +1,49 @@
+# Local Terraform directories and files
+# These contain providers, modules, and potentially state files (if managed locally)
+.terraform/
+*.tfstate
+*.tfstate.*.backup
+
+# Log files
+crash.log
+*.log
+
+# Variable files
+# These often contain sensitive information like API keys, passwords, etc.
+# It's crucial to keep these out of version control.
+# Consider using a .tfvars.example file committed to Git for structure reference.
+*.tfvars
+*.tfvars.json
+
+# Plan files
+# These are outputs of 'terraform plan -out=...' and might contain sensitive data.
+*.tfplan
+
+# Override files
+# These are used for local overrides and should not be committed.
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI configuration files
+# Can contain sensitive credentials or local paths.
+.terraformrc
+terraform.rc
+
+# Terragrunt cache (if using Terragrunt)
+.terragrunt-cache/
+
+# Common editor/IDE directories
+.idea/
+.vscode/
+
+# Common OS generated files
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+
+*.lock.hcl
+
+variables.tf
