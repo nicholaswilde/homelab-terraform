@@ -5,7 +5,7 @@ tasks:
   apply:
     desc: Apply
     cmds:
-      - terraform apply
+      - terraform apply -var-file=env_vars/pve04.tfvars
   init:
     desc: Init
     cmds:
@@ -13,7 +13,7 @@ tasks:
   plan:
     desc: Plan
     cmde:
-      - terraform plan
+      - terraform plan -var-file=env_vars/pve04.tfvars
   decrypt:
     desc: Decrypt vars using SOPS
     cmds:
