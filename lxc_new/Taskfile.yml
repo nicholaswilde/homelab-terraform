@@ -13,15 +13,15 @@ tasks:
   plan:
     desc: Plan
     cmde:
-      - terraform plan -var-file=env_vars/pve04.tfvars
+      - terraform plan -var-file=secrets.tfvars
   decrypt:
     desc: Decrypt vars using SOPS
     cmds:
-      - sops -d --input-type dotenv --output-type dotenv env_vars/pve04.tfvars.enc > env_vars/pve04.tfvars
+      - sops -d --input-type dotenv --output-type dotenv secrets.tfvars.enc > secrets.tfvars
   encrypt:
     desc: Encrypt vars using SOPS
     cmds:
-      - sops -e --input-type dotenv --output-type dotenv env_vars/pve04.tfvars > env_vars/pve04.tfvars.enc
+      - sops -e --input-type dotenv --output-type dotenv secrets.tfvars > secrets.tfvars.enc
   default:
     cmds:
       - task -l
