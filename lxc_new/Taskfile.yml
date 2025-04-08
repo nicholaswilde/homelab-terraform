@@ -2,8 +2,20 @@
 version: '3'
 
 tasks:
+  plan-d:
+    desc: Debug plan
+    cmds:
+      - task: plan
+    env:
+      TF_LOG: DEBUG
+  apply-d:
+    desc: Debug apply
+    cmds:
+      - task: apply
+    env:
+      TF_LOG: "DEBUG"
   apply:
-    desc: Apply
+    desc: Apply Terraform
     cmds:
       - terraform apply -var-file=secrets.tfvars
   init:
@@ -12,7 +24,7 @@ tasks:
       - terraform init
   plan:
     desc: Plan
-    cmde:
+    cmds:
       - terraform plan -var-file=secrets.tfvars
   decrypt:
     desc: Decrypt vars using SOPS

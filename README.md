@@ -9,6 +9,10 @@ A Terraform repo for my homelab.
 
 [Terraform][1] is used to deploy resources in my [homelab][4]. Specifically, containers and virtual machines in Proxmox.
 
+I am using the [Telmate/proxmox provider][7] for my homelab setup.
+
+My homelab has `arm64` and `amd64` clusters and so this repo needs to be able to handle both.
+
 Ansible is used to configure my homelab. See [Homelab Playbooks][3].
 
 ---
@@ -16,6 +20,8 @@ Ansible is used to configure my homelab. See [Homelab Playbooks][3].
 ## :gear: Config
 
 Different roles are broken up into different directories, like a new LXC container in `lxc_new`.
+
+See [proxmox_lxc][8] and [proxmox_vm_qemu][9] resources for more details.
 
 ## :key: Secrets
 
@@ -61,3 +67,6 @@ This project was started in 2025 by [Nicholas Wilde][2].
 [4]: <https://nicholaswilde.io/homelab>
 [5]: <https://getsops.io/>
 [6]: <https://github.com/FiloSottile/age>
+[7]: <https://registry.terraform.io/providers/Telmate/proxmox/latest/docs>
+[8]: <https://registry.terraform.io/providers/Telmate/proxmox/latest/docs/resources/lxc>
+[9]: <https://registry.terraform.io/providers/Telmate/proxmox/latest/docs/resources/vm_qemu>

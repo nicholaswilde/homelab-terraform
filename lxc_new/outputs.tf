@@ -3,7 +3,7 @@ output "lxc_ip_address" {
   # Reference the resource type, its name, and the exported attribute
   # The exact attribute name might vary slightly based on your provider version.
   # Common names include: ipv4_address, default_ipv4_address, or inspecting network blocks.
-  value       = proxmox_lxc.basic.network.ip
+  value       = proxmox_lxc.basic.network[0].ip
 }
 
 # Optional: If the resource exports all network interface details, you might access it differently
