@@ -1,7 +1,7 @@
 resource "proxmox_lxc" "basic" {
   target_node  = "pve04"
   hostname     = var.HOSTNAME
-  ostemplate   = "pve-shared:debian-bookworm-20231124_arm64.tar.xz"
+  ostemplate   = "pve-shared:vztmpl/debian-bookworm-20231124_arm64.tar.xz"
   password     = var.lxc_password
   unprivileged = false
   # arch         = "arm64"
