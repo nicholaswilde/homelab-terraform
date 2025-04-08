@@ -3,4 +3,5 @@ resource "proxmox_lxc" "basic" {
   hostname    = var.hostname
   #id of lxc container to clone
   clone       = "lxc/126"
+  # arch        = "arm64"
 }
